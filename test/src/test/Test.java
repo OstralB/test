@@ -61,7 +61,7 @@ public class Test {
 				}
 
 			} else {
-				System.out.println("" + "\nВы должны были ввести eng символ");
+				System.out.println("\nВы должны были ввести eng символ");
 			}
 
 		} catch (
@@ -72,8 +72,14 @@ public class Test {
 		} catch (
 
 		NullPointerException ex) {
-			System.out.println("\nВы должны были ввести eng символ");
+			System.out.println("\nВы должны были ввести eng символ!11");
 			System.exit(0);
 		}
+		catch (
+
+				StringIndexOutOfBoundsException ex) {
+					System.out.println("\nВы должны были ввести eng символ!11");
+					System.exit(0);
+				}
 	}
 }
